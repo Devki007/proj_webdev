@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Info</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="x">
+    <header class="header-content">
+        <nav>
+            <a href="/index.html" class="nav">Home</a>
+            <span>
+            <label for="fav">Favorite : </label>
+            <select name="fav" id="fav" class="nav">
+                
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+            
+            </select>
+        </span>
+
+            <a href="#about" class="nav"> About</a>
+        </nav>
+
+    </header>
+    </div>
+  <div class="container">
+    <h1>Weather Information</h1>
+    <form id="weatherForm">
+      <input type="text" id="city" name="city" placeholder="Enter City" required>
+      <button type="submit">Get Weather</button>
+    </form>
+    <span class="hai" hidden>
+    <div  class="result" id="weatherResult">
+
+      <div class="card1" id="weatherCard">
+        <P id="temp"></P>
+        <p id="maxtemp"></p>
+        <p id="mintemp"></p>
+      </div>
+      <div class="card2" id="weatherCard">
+        <p id="cld"></p>
+        <p id="sunr"></p>
+        <p id="suns"></p>
+      </div>
+      <div class="card3" id="weatherCard">
+        <p id="humid"></p>
+        <p id="windspeed"></p>
+        <p id="winddigr"></p>
+      </div>
+
+    </div>
+</span>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
